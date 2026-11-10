@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b20">
+  <meta name="description" content="A little universe, made just for Hadi. A birthday garden made with love.">
+  <title>For Hadi — The Enchanted Garden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="В начало">H<span>✦</span></a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#memories">Memories</a>
+      <a href="#letter">A letter</a>
+      <a href="#reasons">22 reasons</a>
+      <a href="#secrets">Secrets</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-button" id="musicToggle" aria-label="Включить музыку" title="Музыка">♫</button>
+      <button class="icon-button" id="soundToggle" aria-label="Выключить звуки интерфейса" title="Звуки интерфейса">♪</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-sky" aria-hidden="true">
+        <div class="moon"></div>
+        <div class="moon-halo"></div>
+        <span class="constellation constellation-one">✧　·　✦</span>
+        <span class="constellation constellation-two">·　✧　·</span>
+      </div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A SECRET GARDEN, JUST FOR YOU <span class="eyebrow-line"></span></p>
+        <p class="script hero-pretitle">For someone extraordinary</p>
+        <h1>Happy Birthday,<br><em>Hadi.</em></h1>
+        <p class="hero-subtitle">A little universe, made just for you.</p>
+        <div class="hero-actions">
+          <button class="primary-button" id="beginJourney"><span>Enter the garden</span><b>↗</b></button>
+          <span class="sound-hint">включи музыку и не спеши ♡</span>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <span>09 NOV — A DAY TO CELEBRATE YOU</span>
+        <a href="#memories" class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></a>
+        <span class="hero-coordinate">A PLACE BETWEEN DREAMS & STARS</span>
+      </div>
+      <div class="garden-ground" aria-hidden="true">
+        <div class="silhouette silhouette-left"></div><div class="silhouette silhouette-right"></div>
+        <div class="glow-flower flower-a">✿</div><div class="glow-flower flower-b">✿</div><div class="glow-flower flower-c">✿</div>
+        <div class="firefly firefly-a"></div><div class="firefly firefly-b"></div><div class="firefly firefly-c"></div>
+      </div>
+    </section>
+
+    <section class="intro section" id="intro">
+      <div class="section-kicker reveal">01 / THE STORY</div>
+      <div class="intro-copy reveal">
+        <p class="script">Some people feel like magic.</p>
+        <h2>And some people<br>make the world <em>brighter.</em></h2>
+        <p class="body-copy">Почти год дружбы — десятки разговоров, тысячи смешных моментов и целая маленькая вселенная, которую понимаем только мы. Сегодня этот сад существует ради одного человека. Ради тебя, Хади.</p>
+      </div>
+      <div class="orbit orbit-one" aria-hidden="true">✦</div><div class="orbit orbit-two" aria-hidden="true">✧</div>
+    </section>
+
+    <section class="memories section" id="memories">
+      <div class="section-heading reveal">
+        <div class="section-kicker">02 / OUR LITTLE UNIVERSE</div>
+        <p class="script">Collected moments</p>
+        <h2>Our <em>memories.</em></h2>
+        <p class="body-copy">Маленькие фрагменты большой истории. Здесь появятся фотографии, которые хочется пересматривать снова и снова.</p>
+      </div>
+      <div class="photo-grid">
+        <article class="photo-card photo-large reveal">
+          <div class="photo-frame"><img src="assets/photos/photo-1.jpg" alt="Ваше совместное фото — замените photo-1.jpg" onerror="this.parentElement.classList.add('photo-placeholder');this.remove()"><span class="photo-placeholder-label">YOUR MOMENT HERE ✦</span></div>
+          <div class="photo-caption"><span>01 — THE BEGINNING</span><p>Один из тех моментов, которые хочется сохранить.</p></div>
+        </article>
+        <article class="photo-card photo-offset reveal">
+          <div class="photo-frame"><img src="assets/photos/photo-2.jpg" alt="Ваше совместное фото — замените photo-2.jpg" onerror="this.parentElement.classList.add('photo-placeholder');this.remove()"><span class="photo-placeholder-label">A LITTLE MEMORY ♡</span></div>
+          <div class="photo-caption"><span>02 — JUST US</span><p>С тобой даже обычный день становится историей.</p></div>
+        </article>
+        <article class="photo-card reveal">
+          <div class="photo-frame"><img src="assets/photos/photo-3.jpg" alt="Ваше совместное фото — замените photo-3.jpg" onerror="this.parentElement.classList.add('photo-placeholder');this.remove()"><span class="photo-placeholder-label">MORE TO COME ✧</span></div>
+          <div class="photo-caption"><span>03 — UNFORGETTABLE</span><p>И это только часть наших воспоминаний.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="letter">
+      <div class="letter-decor" aria-hidden="true">✧</div>
+      <div class="section-kicker reveal">03 / WORDS FROM MY HEART</div>
+      <div class="letter-card reveal">
+        <div class="letter-top"><span>TO: HADI</span><span>WITH LOVE, ALWAYS</span></div>
+        <p class="script letter-salute">My dear Hadi,</p>
+        <h2>Немного слов,<br><em>которые важны.</em></h2>
+        <div class="letter-rule"><span>✦</span></div>
+        <div class="letter-text" id="letterText">
+          <p>С днём рождения, моя дорогая Хади!</p>
+          <p>Я хочу, чтобы в твоей жизни было как можно больше поводов улыбаться, людей, рядом с которыми можно быть собой, и моментов, которые хочется проживать снова.</p>
+          <p>Я очень ценю нашу дружбу. За этот почти год у нас появилось столько своих маленьких традиций, разговоров и шуток, которые со стороны, наверное, вообще невозможно объяснить. И именно поэтому они такие наши.</p>
+          <p>Желаю тебе смелости идти к тому, чего ты действительно хочешь, сил не сомневаться в себе и счастливых случайностей, которые однажды окажутся совсем не случайными.</p>
+          <p>Пусть твои 22 станут началом удивительной главы. Ты заслуживаешь много света, любви, свободы и настоящего счастья.</p>
+          <p class="script letter-sign">Обнимаю крепко. ♡</p>
+        </div>
+        <div class="letter-bottom"><span>CHAPTER 22</span><span>✧</span><span>FOREVER IN BLOOM</span></div>
+      </div>
+    </section>
+
+    <section class="reasons section" id="reasons">
+      <div class="section-heading reveal">
+        <div class="section-kicker">04 / TWENTY-TWO LITTLE LIGHTS</div>
+        <p class="script">A flower for every reason</p>
+        <h2>22 reasons <em>to adore you.</em></h2>
+        <p class="body-copy">Нажимай на цветы. Каждый хранит маленькое послание. Тексты можно заменить на ваши личные.</p>
+      </div>
+      <div class="reason-garden" id="reasonGarden"></div>
+      <p class="garden-note">✦ выбери цветок, чтобы он раскрылся ✦</p>
+    </section>
+
+    <section class="timeline-section section" id="timeline">
+      <div class="section-heading reveal">
+        <div class="section-kicker">05 / OUR TIMELINE</div>
+        <p class="script">A year in little moments</p>
+        <h2>How our story <em>grew.</em></h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span class="timeline-dot">✦</span><div class="timeline-date">THE FIRST CHAPTER</div><h3>Почти незнакомые</h3><p>Тут можно рассказать, как вы познакомились и каким было первое впечатление.</p></article>
+        <article class="timeline-item reveal"><span class="timeline-dot">✧</span><div class="timeline-date">SOMEWHERE ALONG THE WAY</div><h3>Свои люди</h3><p>Появились общие шутки, привычки и разговоры, которые могут длиться бесконечно.</p></article>
+        <article class="timeline-item reveal"><span class="timeline-dot">♡</span><div class="timeline-date">CHAPTER 22</div><h3>И это только начало</h3><p>Впереди ещё столько историй, которые нам предстоит создать.</p></article>
+      </div>
+    </section>
+
+    <section class="secrets-section section" id="secrets">
+      <div class="section-heading reveal">
+        <div class="section-kicker">06 / CLASSIFIED BY THE SHINOBI COUNCIL</div>
+        <p class="script">Psst... a secret awaits</p>
+        <h2>The garden has <em>secrets.</em></h2>
+        <p class="body-copy">Не всё в этом саду настолько серьёзно, как кажется. Некоторые тайны лучше не открывать без подготовки.</p>
+      </div>
+      <div class="secret-panel reveal">
+        <div class="secret-seal" id="secretSeal" role="button" tabindex="0" aria-label="Открыть секрет">卍</div>
+        <p class="secret-label">TOP SECRET · SHINOBI ARCHIVES</p>
+        <h3 id="secretTitle">Запечатанное послание</h3>
+        <p id="secretText">Говорят, если нажать на печать, можно пробудить древнюю силу...</p>
+        <button class="outline-button" id="secretButton">Осмелиться открыть</button>
+      </div>
+      <div class="secret-counter" id="secretCounter">HIDDEN EASTER EGG: 0 / 5</div>
+    </section>
+
+    <section class="finale section" id="finale">
+      <div class="finale-stars" aria-hidden="true">✦　·　✧　　　✦　　·　✧</div>
+      <div class="finale-content reveal">
+        <p class="script">And the magic continues...</p>
+        <p class="finale-age">TWENTY TWO</p>
+        <h2>Happy Birthday,<br><em>Hadi!</em></h2>
+        <p class="finale-message">Пусть твоя жизнь будет похожа на этот сад: удивительная, яркая, полная чудес и людей, которые искренне тебя любят.</p>
+        <div class="finale-heart">♡</div>
+        <button class="primary-button" id="celebrateButton"><span>Make a wish</span><b>✦</b></button>
+      </div>
+      <footer class="footer"><span>MADE WITH LOVE, JUST FOR HADI</span><span>✧ 22 ✧</span><span>THE END? NEVER.</span></footer>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <audio id="backgroundMusic" src="assets/music.mp3" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
